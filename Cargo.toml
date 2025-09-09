@@ -1,0 +1,8 @@
+[package]
+name = "ssl-cert-checker"
+version = "0.1.0"
+authors = ["VS Code <vbenders@gmail.com>"]
+
+[dependencies]
+openssl = "0.10.73"
+chrono = "0.4"

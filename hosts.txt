@@ -1,0 +1,11 @@
+# This is a hosts file for SSL certificate checking
+# Lines starting with # are comments and will be ignored
+# Empty lines are also ignored
+
+www.heise.de:443
+www.paypal.com
+paypal.com
+x.com
+tesla.com
+starlink.com
+spacex.com
