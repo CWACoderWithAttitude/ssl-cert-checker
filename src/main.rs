@@ -96,7 +96,7 @@ pub fn check_certs_and_write_to_file(hosts: &[&str], output_file_prefix: &str) -
             }
             Err(e) => {
                 eprintln!("TCP error for {}: {}", host, e);
-                writeln!(file, "{};TCP ERROR;TCP ERROR;TCP ERROR;TCP ERROR", host)?;
+                writeln!(file, "{};-;-;-;-", host)?;
             }
         }
     }

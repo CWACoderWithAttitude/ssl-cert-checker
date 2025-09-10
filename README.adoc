@@ -1,0 +1,38 @@
+= SSL-Cert-Checker
+
+== What is it?
+A small tool to check SSL certificates of a list of hosts.
+
+== Prerequisites
+You need  https://www.rust-lang.org/tools/install[Rust].
+Script was developed and tested with Rust 1.87.0 - any decent version should work.
+
+== How to use
+Put the hostnames you want to check in `hosts.txt`.
+Start the script with `cargo run`.
+
+== Result
+The result is an excel compatible csv file - impress your manager ;-)
+```
+Host;Not Before;Not After;Common Name;SANs
+www.heise.de:443;Jul 21 03:43:11 2025 GMT;Oct 19 03:43:10 2025 GMT;www.heise.de;www.heise.de
+...
+```
+
+Lines with errors look like this:
+```
+Host;Not Before;Not After;Common Name;SANs
+spacex.cms;-;-;-;-
+
+== Why?
+I had to check a list of hosts for their SSL certificate validity.
+The first versions involved bash+openssl or python. OK but lousy performance.
+
+Everybody talks about Rust and it's awesome performance. So I decided to rewrite stuff in Rust.
+
+The result blew my mind. I have to use Rust more often...
+
+== License
+
+Copyright © Volker Benders.. All rights reserved.<br />
+Licensed under the MIT License. See LICENSE in the project root for license information.
