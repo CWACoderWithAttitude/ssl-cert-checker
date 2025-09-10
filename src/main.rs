@@ -22,7 +22,6 @@ fn main() {
     };
     
     let host_refs: Vec<&str> = hosts.iter().map(|s| s.as_str()).collect();
-    println!("host_refs, {}!", host_refs.join(", "));
     match check_certs_and_write_to_file(&host_refs, "certificates") {
         Ok(_) => println!("Certificate data written to certificates.csv"),
         Err(e) => eprintln!("Error processing certificates: {}", e),
