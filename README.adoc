@@ -23,6 +23,7 @@ Lines with errors look like this:
 ```
 Host;Not Before;Not After;Common Name;SANs
 spacex.cms;-;-;-;-
+```
 
 == Why?
 I had to check a list of hosts for their SSL certificate validity.
