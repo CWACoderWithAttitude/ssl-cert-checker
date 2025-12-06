@@ -33,6 +33,11 @@ Everybody talks about Rust and it's awesome performance. So I decided to rewrite
 
 The result blew my mind. I have to use Rust more often...
 
+== Dev
+
+Devcontainer should include everyting required to get you started: https://github.com/devcontainers/features/tree/main/src/rust[rust lang and some useful extensions to VS Code].
+
+
 == License
 
 Copyright © Volker Benders.
